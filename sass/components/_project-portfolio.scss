@@ -1,0 +1,112 @@
+.project {
+  @media screen and (max-width: 1199px) {
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 480px) {
+    display: block;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  &__img {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__card {
+    margin: 0;
+    padding: 20px 24px;
+    border: 1px solid #eeeeee;
+  }
+
+  .project__text {
+    padding: 63px 24px;
+
+    font-size: 18px;
+    line-height: calc(28 / 18);
+    letter-spacing: 0.03em;
+    color: $secondary-bg-color;
+  }
+
+  &__title {
+    margin-bottom: 4px;
+
+    font-size: 18px;
+    line-height: 2;
+    max-width: 370px;
+    letter-spacing: 0.06em;
+    color: $title-text-color;
+  }
+  &__name {
+    font-size: 16px;
+    line-height: 1.9;
+    max-width: 370px;
+
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+  }
+}
+
+.project__item {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 15px;
+    width: calc((100% - 60px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 3);
+  }
+}
+
+.project__link {
+  text-decoration: none;
+  display: inline-block;
+
+  transition: box-shadow $timing $timing-function;
+
+  &:focus,
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.project__description {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  pointer-events: none;
+
+  width: 370px;
+  height: 294px;
+  background: rgba(33, 150, 243, 0.9);
+
+  transition: transform $timing $timing-function;
+  transform: translateY(100%);
+
+  .project__link:focus &,
+  .project__link:hover & {
+    transform: translateY(0);
+  }
+}
+
+.project__title--transition,
+.project__name--transition {
+  transition: color $timing $timing-function;
+}
+
+.project__title--transition:hover,
+.project__name--transition:hover {
+  color: $accen-color;
+}

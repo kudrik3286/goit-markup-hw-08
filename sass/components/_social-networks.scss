@@ -1,0 +1,115 @@
+.networks {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.networks__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  width: 44px;
+  height: 44px;
+  text-decoration: none;
+  color: $bg-networks-link;
+  background-color: $primary-whit-color;
+
+  transition-property: background-color;
+  transition-duration: $timing;
+  transition-timing-function: $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accen-color;
+  }
+}
+
+.networks__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.networks__icon {
+  fill: currentColor;
+
+  transition-property: background-color;
+  transition-duration: $timing;
+  transition-timing-function: $timing-function;
+
+  .networks__link:hover &,
+  .networks__link:focus & {
+    fill: $primary-whit-color;
+  }
+}
+
+.footer-networks {
+  padding-top: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+
+  &__title {
+    @media screen and (min-width: 1200px) {
+      text-align: start;
+      margin-left: 0;
+      margin-right: 0;
+      display: block;
+      max-width: 350px;
+    }
+
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $primary-whit-color;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width: 1200px) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
+
+.footer-networks__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  width: 44px;
+  height: 44px;
+  text-decoration: none;
+  color: $primary-whit-color;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color $timing $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accen-color;
+  }
+}

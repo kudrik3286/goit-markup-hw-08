@@ -1,0 +1,92 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: $primary-whit-color;
+  color: $primary-text-color;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.section {
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.btn {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $primary-whit-color;
+  cursor: pointer;
+
+  width: 200px;
+  height: 50px;
+
+  background: $accen-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+
+  transition-property: box-shadow, backgraund-image;
+  transition-duration: $timing;
+  transition-timing-function: $timing-function;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-image: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.15),
+      rgba(0, 0, 0, 0.15)
+    );
+  }
+}
