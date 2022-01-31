@@ -14,6 +14,7 @@
   &__img {
     position: relative;
     overflow: hidden;
+    display: block;
   }
 
   &__card {
@@ -34,7 +35,7 @@
   &__title {
     margin-bottom: 4px;
 
-    font-size: 18px;
+    font-size: 17px;
     line-height: 2;
     max-width: 370px;
     letter-spacing: 0.06em;
@@ -42,7 +43,7 @@
   }
   &__name {
     font-size: 16px;
-    line-height: 1.9;
+    line-height: 1.87;
     max-width: 370px;
 
     letter-spacing: 0.03em;
@@ -71,7 +72,7 @@
 
 .project__link {
   text-decoration: none;
-  display: inline-block;
+  display: block;
 
   transition: box-shadow $timing $timing-function;
 
