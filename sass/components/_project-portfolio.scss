@@ -55,8 +55,8 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 30px;
     width: 100%;
-    &:not(:last-child) {
-      margin-bottom: 30px;
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 

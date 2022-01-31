@@ -1224,8 +1224,8 @@ img {
     margin-bottom: 30px;
     width: 100%;
   }
-  .project__item:not(:last-child) {
-    margin-bottom: 30px;
+  .project__item:last-child {
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 768px) {
