@@ -709,6 +709,11 @@ img {
   text-transform: uppercase;
   color: #212121;
 }
+@media screen and (max-width: 767px) {
+  .feature__title {
+    text-align: center;
+  }
+}
 .feature__text {
   font-size: 14px;
   line-height: 1.7;
@@ -1111,7 +1116,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .filter {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1319,6 +1324,11 @@ img {
 
 .address {
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .address {
+    margin-bottom: 0;
+  }
 }
 
 .address__link {
